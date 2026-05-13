@@ -1,0 +1,783 @@
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #169408;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    /* background-color: #210404; */
+    padding: 10px 10px;
+    text-decoration: solid;
+    font-weight: 900;
+    font-size: 25px;
+    color: #fff;
+}
+
+.navbar .container-fluid {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111468c5;
+}
+
+.container-fluid button {
+    background-color: #169408;
+    padding: 13px 65px;
+    border-radius: 25px;
+}
+
+.container-fluid button:hover {
+    background-color: #fff;
+}
+
+.collapse {
+    /* background-color: #169408; */
+    width: 650px;
+    height: 40px;
+    text-align: center;
+
+
+}
+
+.collapse .navbar-nav .nav-link {
+    /* background-color: #1aff00; */
+    padding: 5px 15px;
+    text-decoration: solid;
+    font-size: 17px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.collapse .navbar-nav .nav-link:hover {
+    color: #1aff00;
+}
+
+@media (max-width: 992px) {
+    .custom-navbar .navbar-nav {
+        background-color: #0d1b2a;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+
+    .custom-navbar .nav-link {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+}
+
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+*/ .hero-overlay .hero-left {
+    position: absolute;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.hero-content {
+    color: white;
+    max-width: 600px;
+    padding-left: 60px;
+}
+
+.welcome {
+    font-size: 14px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    /* margin-bottom: 5px; */
+    margin-top: 175px;
+
+}
+
+.hero-content p {
+
+    font-weight: 700;
+}
+
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+
+
+
+
+.hero-btn {
+    background: #1aff00;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.hero-btn:hover {
+    background: white;
+}
+
+
+
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+.stat-box h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.stat-box p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.3;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .hero-overlay {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+    background-color: #083a6cd1;
+}
+
+
+.about .one {
+    flex: 1;
+    background-color: rgba(79, 79, 137, 0.72);
+    padding: 40px;
+    color: white;
+}
+
+
+.about .one h4 {
+    color: #1aff00;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+
+.about .one h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+
+.about .one p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+.about .one-btn {
+    background-color: #1aff00;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.about .one-btn:hover {
+    background-color: #169408;
+}
+
+.about .two {
+    flex: 1;
+}
+
+
+.about .two img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about .one {
+        padding: 30px 20px;
+    }
+
+    .about .one h1 {
+        font-size: 28px;
+    }
+
+    .about .two img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+
+
+
+
+.card-group {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: 30px;
+
+    border-radius: 20px;
+    background-color: #07082e;
+    border: 2px solid black;
+
+    flex-wrap: wrap;
+    /* IMPORTANT */
+}
+
+/* FIXED COMMENT & CARD */
+.card-group .card {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 2px solid black;
+    background: #fff;
+}
+
+/* IMAGE FIX */
+.card-group .card img {
+    width: 100%;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
+    display: block;
+}
+
+/* CARD BODY */
+.card-body {
+    text-align: center;
+    background-color: #169408;
+    border-top: 1px solid black;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-body h5 {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card p {
+    width: 100%;
+    color: #210404;
+    margin: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .card-group {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .card-group .card {
+        max-width: 100%;
+    }
+
+    .card-group .card img {
+        height: 180px;
+    }
+}
+
+
+
+.Traning-rate {
+    width: 100%;
+    padding: 60px 20px;
+    background-image: url(./gym6565.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+section .Traning-rate .rates {
+    display: flex;
+    /* background-color: #1aff00; */
+    padding-top: 30px;
+}
+
+
+.Traning-rate .rates p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Traning-rate .rates h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+
+
+
+.pricing {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.plan {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    width: 300px;
+
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.plan-top {
+    background: #5fb02e;
+    color: #fff;
+    text-align: center;
+
+    height: 250px;
+    width: 270px;
+    padding-top: 10px;
+}
+
+
+.plan-top h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan-top p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+
+.plan-top .price {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.dollar {
+    font-size: 30px;
+    vertical-align: top;
+}
+
+.cents {
+    font-size: 26px;
+    vertical-align: top;
+}
+
+
+.plan-body p {
+    margin: 10px 0;
+}
+
+.plan-body {
+    text-align: center;
+    padding: 35px 20px;
+    color: #dcdcdc;
+}
+
+.plan-body p {
+    margin: 12px 0;
+}
+
+
+.plan-body button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1aff00;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.plan-body button:hover {
+    background: #5fb02e;
+}
+
+
+.choose {
+    background-image: url(./gym\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    /* top & bottom padding */
+    color: white;
+}
+
+
+.choose .why {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.choose .why h4 {
+    font-size: 24px;
+    color: #1aff00;
+    margin-bottom: 10px;
+}
+
+
+.choose .why h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.success-one {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .success-one {
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .success-top {
+        width: 90%;
+
+        margin-bottom: 20px;
+
+    }
+
+    .choose .why h1 {
+        font-size: 28px;
+
+    }
+}
+
+
+
+
+/* ===== FEATURED SUCCESS STORIES SECTION ===== */
+section.Featured {
+    background-color: #07082e;
+    width: 100%;
+    padding: 50px 20px;
+    /* added side padding */
+}
+
+.Featured .Featured-one h3 {
+    color: #fff;
+    text-align: center;
+    background-color: #07082e;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.Featured .Featured-one h1 {
+    color: #1aff00;
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* CARD GROUP */
+.Featured .card-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* INDIVIDUAL CARD */
+.Featured .card-group .card {
+    width: 300px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HOVER EFFECT */
+.Featured .card-group .card:hover {
+    transform: translateY(-10px);
+}
+
+/* CARD IMAGE FIX */
+.Featured .card-group .card img {
+    width: 100%;
+    height: 200px;
+    /* fixed height */
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* CARD BODY */
+.Featured .card-group .card-body h5 {
+    color: white;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.Featured .card-group .card-body p {
+    color: #fff;
+    margin: 0 10px 15px;
+    /* added margin inside card body */
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .Featured .Featured-one h1 {
+        font-size: 28px;
+    }
+
+    .Featured .card-group {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .Featured .card-group .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .Featured .card-group .card img {
+        height: 180px;
+        /* smaller height on mobile */
+    }
+}
+
+
+
+.booking {
+    background-image: url(./gymphoto5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.booking-overlay {
+    color: white;
+    max-width: 500px;
+}
+
+.booking-form form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+
+.booking-form input,
+.booking-form select {
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 15px;
+}
+
+.booking-form button {
+    margin: auto;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    background-color: #1aff00;
+    font-weight: 700;
+}
+
+
+.last {
+    background-color: #07082e;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.last ul li {
+    color: #fff;
+}
+
+.last h2 {
+    color: #fff;
+    font-weight: 900;
+}
+
+/* ===== Scroll To Top Button (FIXED VERSION) ===== */
+
+.progress-wrap {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #07082e;
+    box-shadow: 0 0 0 3px #1aff00 inset;
+    cursor: pointer;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.progress-wrap.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Arrow */
+.progress-wrap::after {
+    content: "↑";
+    position: absolute;
+    font-size: 22px;
+    color: #1aff00;
+    z-index: 2;
+}
+
+/* SVG circle */
+.progress-circle {
+    transform: rotate(-90deg);
+}
+
+.progress-circle path {
+    fill: none;
+    stroke: #1aff00;
+    stroke-width: 4;
+    stroke-dasharray: 251;
+    stroke-dashoffset: 251;
+    transition: stroke-dashoffset 0.1s linear;
+}
